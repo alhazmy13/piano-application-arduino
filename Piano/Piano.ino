@@ -7,7 +7,6 @@
   */
 
 #include <CapacitiveSensor.h>
-#include "pitches.h"
 
 #define COMMON_PIN      2  
 #define SPEEKER_PIN      11  
@@ -17,7 +16,7 @@
 
 #define CS(Y) CapacitiveSensor(2, Y)
 
-int notes[]={NOTE_C4,NOTE_D4,NOTE_E4,NOTE_F4,NOTE_G4,NOTE_A4,NOTE_B4,NOTE_C5}; // C-Major scale
+int notes[]={262,294,330,349,392,440,294,523}; 
 
 
 CapacitiveSensor keys[] = {CS(3), CS(4), CS(5), CS(6), CS(7), CS(8), CS(9), CS(10)};
